@@ -3,11 +3,11 @@
 repos:
   # Official repositories
   - name: stable
-    url: https://kubernetes-charts.storage.googleapis.com
-    source: https://github.com/kubernetes/charts/tree/master/stable
+    url: https://aliacs-app-catalog.oss-cn-hangzhou.aliyuncs.com/charts/
+    source: https://aliacs-app-catalog.oss-cn-hangzhou.aliyuncs.com/charts/
   - name: incubator
-    url: https://kubernetes-charts-incubator.storage.googleapis.com
-    source: https://github.com/kubernetes/charts/tree/master/incubator
+    url: https://aliacs-app-catalog.oss-cn-hangzhou.aliyuncs.com/charts-incubator/
+    source: https://aliacs-app-catalog.oss-cn-hangzhou.aliyuncs.com/charts-incubator/
   # Add your own repository
   #- name: my-repo-name
   #  url: my-repository-url
@@ -27,6 +27,7 @@ releasesEnabled: true
 # Useful if you are running the app outside of the k8s cluster during development
 tillerPortForward: true
 
+useTLS: true
 # Specify a different namespace where to locate tiller-deploy
 tillerNamespace: kube-system
 
